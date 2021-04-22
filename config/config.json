@@ -1,0 +1,19 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "doc-processor-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/docProcessor/DocProcessorWebPart.js",
+          "manifest": "./src/webparts/docProcessor/DocProcessorWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "DocProcessorWebPartStrings": "lib/webparts/docProcessor/loc/{locale}.js",
+    "ControlStrings": "node_modules/@pnp/spfx-controls-react/lib/loc/{locale}.js"
+  }
+}
